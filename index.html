@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入力フォーム</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>入力フォーム</h1>
+        <input type="text" id="userInput" placeholder="答えを入力してください">
+        <br>
+        <button onclick="checkAnswer()">回答する</button>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            var input = document.getElementById('userInput').value;
+            if (input === "りんご") {
+                window.location.href = "correct.html";
+            } else {
+                window.location.href = "incorrect.html";
+            }
+        }
+    </script>
+</body>
+</html>
