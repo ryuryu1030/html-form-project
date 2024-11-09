@@ -16,6 +16,11 @@
         .container {
             text-align: center;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* 画像とフォームの間に余白を追加 */
+        }
         input[type="text"] {
             padding: 10px;
             font-size: 16px;
@@ -31,6 +36,8 @@
 </head>
 <body>
     <div class="container">
+        <img src="LOGO.png">
+
         <h1>こたえは？</h1>
         <input type="text" id="userInput" placeholder="ひらがなで入力してください">
         <br>
