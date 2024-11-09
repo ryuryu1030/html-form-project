@@ -32,7 +32,7 @@
 <body>
     <div class="container">
         <h1>入力フォーム</h1>
-        <input type="text" id="userInput" placeholder="答えを入力してください">
+        <input type="text" id="userInput" placeholder="キーワードをひらがなで入力してください">
         <br>
         <button onclick="checkAnswer()">回答する</button>
     </div>
@@ -40,7 +40,7 @@
     <script>
         function checkAnswer() {
             var input = document.getElementById('userInput').value;
-            if (input === "りんご") {
+            if (input === "あかいらんぷ") {
                 window.location.href = "correct.html";
             } else {
                 window.location.href = "incorrect.html";
